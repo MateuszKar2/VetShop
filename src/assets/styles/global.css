@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+
+  /* Ustawienie głównego koloru aplikacji */
+:root {
+    --primary-color: #007bff; /* Niebieski */
+    --background-color: #f4f4f4; /* Jasnoszary */
+    --outer-background-color: #e0e0e0; /* Jaśniejszy szary dla obszaru poza stroną */
+  }
+  
+  /* Resetowanie domyślnych marginesów i paddingów */
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Stylizacja głównej zawartości */
+  .main-content {
+    max-width: 1000px; /* Maksymalna szerokość */
+    margin: 0 auto; /* Wyśrodkowanie */
+    padding: 20px;
+  }
+  
+  /* Tło obszaru poza główną zawartością */
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--outer-background-color);
+    z-index: -1;
+  }
+  
+  /* Stylizacja nagłówków */
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  /* Stylizacja linków */
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  a:hover {
+    color: darken(var(--primary-color), 10%);
+  }
+  
+  
+  /* Stylizacja przycisków */
+  button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: darken(var(--primary-color), 10%);
+  }
