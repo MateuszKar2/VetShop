@@ -1,46 +1,78 @@
-# Getting Started with Create React App
+1. Zainicjowanie Projektu
+Zainstaluj projekt za pomocą create-react-app z szablonem TypeScript. To utworzy szkielet aplikacji z odpowiednimi plikami konfiguracyjnymi.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2. Struktura Katalogów i Plików
+Zorganizuj strukturę katalogów i plików w projekcie, aby była czytelna i łatwa w utrzymaniu. Stwórz foldery na komponenty, strony, style i typy TypeScript.
 
-## Available Scripts
+3. Instalacja Zależności
+Zainstaluj dodatkowe zależności, takie jak React Router (do nawigacji) oraz Axios (do wykonywania zapytań HTTP do API).
 
-In the project directory, you can run:
+4. Konfiguracja Routera
+Skonfiguruj React Router w aplikacji, tworząc trasy dla różnych stron (np. strona główna, strona produktów, szczegóły produktu, koszyk).
 
-### `npm start`
+<!-- npm install react-router-dom -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+5. Tworzenie Komponentów
+Stwórz komponenty, które będą wykorzystywane na stronach, takie jak:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Header (nagłówek z nawigacją).
 
-### `npm test`
+Footer (stopka z informacjami o prawach autorskich).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ProductList (wyświetlanie listy produktów).
 
-### `npm run build`
+ProductItem (wyświetlanie pojedynczego produktu).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!--pobrałem- skompresowałem zdjęcia -->
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6. Strony Aplikacji
+Utwórz strony dla różnych sekcji sklepu:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+HomePage (strona główna z powitaniem i ogólnymi informacjami o sklepie).
 
-### `npm run eject`
+ProductsPage (strona wyświetlająca listę produktów).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ProductDetailPage (strona z szczegółami produktu).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Cart (strona koszyka).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+7. Komunikacja z API
+Zintegruj aplikację z zewnętrznym API lub własnym backendem, aby pobierać dane o produktach (np. za pomocą Axios). Obsłuż zapytania HTTP, aby wyświetlić produkty na stronie.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+8. Zarządzanie Stanem
+Rozważ użycie React Context API do zarządzania stanem aplikacji (np. przechowywania produktów w koszyku, stanu użytkownika itp.).
 
-## Learn More
+9. Stylizacja
+Zadbaj o estetykę aplikacji, tworząc odpowiednie style CSS lub korzystając z frameworków CSS (np. Styled-components, TailwindCSS, Material UI, etc.).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+10. Testowanie
+Uruchom aplikację lokalnie i przetestuj wszystkie funkcje, takie jak:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Nawigacja między stronami.
+
+Dodawanie produktów do koszyka.
+
+Ładowanie danych z API.
+
+Sprawdzanie błędów i walidacja formularzy (np. koszyk, rejestracja).
+
+11. Optymalizacja
+Upewnij się, że aplikacja jest szybka i wydajna:
+
+Optymalizuj obrazy.
+
+Używaj lazy loading dla komponentów.
+
+Włącz minifikację i kompresję kodu przy budowie aplikacji.
+
+12. Deploy (Publikacja)
+Kiedy aplikacja będzie gotowa, zdecyduj, gdzie ją opublikujesz. Możliwości to:
+
+Netlify, Vercel (proste deploye z repozytoriów GitHub).
+
+Heroku (dla aplikacji z backendem).
+
+GitHub Pages (dla aplikacji statycznych).
+
+13. Utrzymanie i Rozwój
+Po wdrożeniu aplikacji regularnie sprawdzaj błędy, monitoruj wydajność i dodawaj nowe funkcjonalności na podstawie feedbacku użytkowników (np. możliwość logowania się, dodawanie opinii o produktach, itp.).
