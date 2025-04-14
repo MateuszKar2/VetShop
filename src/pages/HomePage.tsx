@@ -2,9 +2,11 @@
 
 import { Banner, Logo } from "../components/Banner"
 import { Blog } from "../components/Blog"
+import { FoodAnimals } from "../components/FoodAnimals"
 import { Newsletter } from "../components/Newsletter"
 import { OurServices } from "../components/OurServices"
 import { Testimonials } from "../components/Testimonials"
+import { foodAnimals } from "../utils/data"
 
 
 export const HomePage = () => {
@@ -21,6 +23,8 @@ export const HomePage = () => {
             {/* section */}
             <div>Specjal offers</div>
             {/* karma, akcesoria, produkty w wyjątkowej cenie */}
+
+            <FoodAnimals foods={foodAnimals}/>
 
             <div>
                 {/* section -umów wizyte*/}
