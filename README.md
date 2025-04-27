@@ -15,82 +15,92 @@
 
 
 
+📝 Project Development Steps
+1. Project Initialization
+Initialize the project using create-react-app with the TypeScript template. This will create the skeleton of the application with the necessary configuration files.
 
-1. Zainicjowanie Projektu
-Zainstaluj projekt za pomocą create-react-app z szablonem TypeScript. To utworzy szkielet aplikacji z odpowiednimi plikami konfiguracyjnymi.
+2. Folder and File Structure
+Organize the project folder structure to keep it clean and maintainable. Create folders for components, pages, styles, and TypeScript types.
 
-2. Struktura Katalogów i Plików
-Zorganizuj strukturę katalogów i plików w projekcie, aby była czytelna i łatwa w utrzymaniu. Stwórz foldery na komponenty, strony, style i typy TypeScript.
+3. Install Dependencies
+Install additional dependencies such as:
 
-3. Instalacja Zależności
-Zainstaluj dodatkowe zależności, takie jak React Router (do nawigacji) oraz Axios (do wykonywania zapytań HTTP do API).
+React Router (for navigation)
 
-4. Konfiguracja Routera
-Skonfiguruj React Router w aplikacji, tworząc trasy dla różnych stron (np. strona główna, strona produktów, szczegóły produktu, koszyk).
+Axios (for HTTP requests)
+npm install react-router-dom axios
 
-<!-- npm install react-router-dom -->
+4. Configure Router
+Set up React Router to handle navigation across different pages (e.g., home page, products page, product details, cart page).
 
-5. Tworzenie Komponentów
-Stwórz komponenty, które będą wykorzystywane na stronach, takie jak:
+5. Create Components
+Create reusable components that will be used across pages, such as:
 
-Header (nagłówek z nawigacją).
+Header (navigation bar)
 
-Footer (stopka z informacjami o prawach autorskich).
+Footer (footer with copyright information)
 
-ProductList (wyświetlanie listy produktów).
+ProductList (to display a list of products)
 
-ProductItem (wyświetlanie pojedynczego produktu).
+ProductItem (to display a single product)
 
-<!--pobrałem- skompresowałem zdjęcia -->
+6. Create Application Pages
+Set up pages for the different sections of the store:
 
-6. Strony Aplikacji
-Utwórz strony dla różnych sekcji sklepu:
+HomePage (welcome page with general store information)
 
-HomePage (strona główna z powitaniem i ogólnymi informacjami o sklepie).
+ProductsPage (page displaying a list of products)
 
-ProductsPage (strona wyświetlająca listę produktów).
+ProductDetailPage (page showing detailed information about a single product)
 
-ProductDetailPage (strona z szczegółami produktu).
+CartPage (page displaying items in the shopping cart)
 
-Cart (strona koszyka).
+7. API Communication
+Integrate the application with an external API or your own backend to fetch product data (e.g., using Axios to make HTTP requests).
 
-7. Komunikacja z API
-Zintegruj aplikację z zewnętrznym API lub własnym backendem, aby pobierać dane o produktach (np. za pomocą Axios). Obsłuż zapytania HTTP, aby wyświetlić produkty na stronie.
+Handle API requests to display product information on the pages.
 
-8. Zarządzanie Stanem
-Rozważ użycie React Context API do zarządzania stanem aplikacji (np. przechowywania produktów w koszyku, stanu użytkownika itp.).
+8. State Management
+Use React Context API to manage the application's state, such as storing the cart contents, user status, etc.
 
-9. Stylizacja
-Zadbaj o estetykę aplikacji, tworząc odpowiednie style CSS lub korzystając z frameworków CSS (np. Styled-components, TailwindCSS, Material UI, etc.).
+9. Styling
+Design and style the application using CSS. You may also consider using CSS frameworks or libraries, such as:
 
-10. Testowanie
-Uruchom aplikację lokalnie i przetestuj wszystkie funkcje, takie jak:
+Styled-components
 
-Nawigacja między stronami.
+TailwindCSS
 
-Dodawanie produktów do koszyka.
+Material UI
 
-Ładowanie danych z API.
+10. Testing
+Run the application locally and test all features, such as:
 
-Sprawdzanie błędów i walidacja formularzy (np. koszyk, rejestracja).
+Navigation between pages
 
-11. Optymalizacja
-Upewnij się, że aplikacja jest szybka i wydajna:
+Adding products to the shopping cart
 
-Optymalizuj obrazy.
+Loading data from the API
 
-Używaj lazy loading dla komponentów.
+Form validation (e.g., cart, user registration)
 
-Włącz minifikację i kompresję kodu przy budowie aplikacji.
+11. Optimization
+Ensure that the application is fast and efficient by:
 
-12. Deploy (Publikacja)
-Kiedy aplikacja będzie gotowa, zdecyduj, gdzie ją opublikujesz. Możliwości to:
+Optimizing images
 
-Netlify, Vercel (proste deploye z repozytoriów GitHub).
+Using lazy loading for components
 
-Heroku (dla aplikacji z backendem).
+Enabling code minification and compression during the build process
 
-GitHub Pages (dla aplikacji statycznych).
+12. Deploy (Publishing)
+Once the app is ready, choose a platform to deploy it:
 
-13. Utrzymanie i Rozwój
-Po wdrożeniu aplikacji regularnie sprawdzaj błędy, monitoruj wydajność i dodawaj nowe funkcjonalności na podstawie feedbacku użytkowników (np. możliwość logowania się, dodawanie opinii o produktach, itp.).
+Netlify or Vercel for simple deployment from GitHub repositories
+
+Heroku for applications with a backend
+
+GitHub Pages for static applications
+
+13. Maintenance and Development
+After deployment, regularly check for bugs, monitor performance, and add new features based on user feedback (e.g., user login, product reviews, etc.).
+
