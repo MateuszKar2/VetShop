@@ -1,3 +1,21 @@
+# VetShop
+
+**VetShop** is my latest project, currently under development. It aims to be a web application for an online veterinary shop. The project is built using **TypeScript**, **React** for the front-end, and a back-end component to handle various store-related functionalities.
+
+## 🛠️ Technologies Used
+
+- [TypeScript](https://www.typescriptlang.org/) – For static typing and better code quality
+- [React](https://reactjs.org/) – Front-end framework for building user interfaces
+- [Node.js](https://nodejs.org/) – Backend server runtime environment
+- [Express.js](https://expressjs.com/) – Backend framework for handling routes and requests
+- [MongoDB](https://www.mongodb.com/) – NoSQL database (if used for the project)
+- [JWT Authentication](https://jwt.io/) – Authentication for users and admin access (if applicable)
+
+## 🚀 Getting Started
+
+
+
+
 1. Zainicjowanie Projektu
 Zainstaluj projekt za pomocą create-react-app z szablonem TypeScript. To utworzy szkielet aplikacji z odpowiednimi plikami konfiguracyjnymi.
 
