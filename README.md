@@ -14,93 +14,103 @@
 ## 🚀 Getting Started
 
 
+🚀 Development Roadmap
+This project is a TypeScript-based React application designed with clean architecture and modular structure. Below is a high-level overview of the development steps and technologies used:
 
-📝 Project Development Steps
-1. Project Initialization
-Initialize the project using create-react-app with the TypeScript template. This will create the skeleton of the application with the necessary configuration files.
+🔧 Initialization & Setup
+Bootstrapped using Create React App with the TypeScript template.
 
-2. Folder and File Structure
-Organize the project folder structure to keep it clean and maintainable. Create folders for components, pages, styles, and TypeScript types.
+Project structure organized into separate folders for components, pages, styles, and types.
 
-3. Install Dependencies
-Install additional dependencies such as:
+📦 Core Dependencies
+React Router – for client-side navigation
 
-React Router (for navigation)
+Axios – for API communication
 
-Axios (for HTTP requests)
-npm install react-router-dom axios
+🌐 Routing & Navigation
+Configured React Router for multiple pages:
 
-4. Configure Router
-Set up React Router to handle navigation across different pages (e.g., home page, products page, product details, cart page).
+Home
 
-5. Create Components
-Create reusable components that will be used across pages, such as:
+Products
 
-Header (navigation bar)
+Product Details
 
-Footer (footer with copyright information)
+Cart
 
-ProductList (to display a list of products)
+🧩 Components
+Reusable UI components include:
 
-ProductItem (to display a single product)
+Header – navigation bar
 
-6. Create Application Pages
-Set up pages for the different sections of the store:
+Footer – page footer
 
-HomePage (welcome page with general store information)
+ProductList – displays all products
 
-ProductsPage (page displaying a list of products)
+ProductItem – single product card
 
-ProductDetailPage (page showing detailed information about a single product)
+📄 Pages
+Dedicated pages for:
 
-CartPage (page displaying items in the shopping cart)
+Home
 
-7. API Communication
-Integrate the application with an external API or your own backend to fetch product data (e.g., using Axios to make HTTP requests).
+Product listing
 
-Handle API requests to display product information on the pages.
+Product details
 
-8. State Management
-Use React Context API to manage the application's state, such as storing the cart contents, user status, etc.
+Shopping cart
 
-9. Styling
-Design and style the application using CSS. You may also consider using CSS frameworks or libraries, such as:
+🔌 API Integration
+Product data is fetched from an external API or backend using Axios.
+
+Data is dynamically displayed based on routing.
+
+🧠 State Management
+React Context API handles global state like cart contents and user data.
+
+🎨 Styling
+CSS or libraries such as:
 
 Styled-components
 
 TailwindCSS
 
-Material UI
+Material UI (optional)
 
-10. Testing
-Run the application locally and test all features, such as:
+✅ Testing
+Manual testing includes:
 
-Navigation between pages
+Page navigation
 
-Adding products to the shopping cart
+Product adding/removal
 
-Loading data from the API
+API data loading
 
-Form validation (e.g., cart, user registration)
+Form validation
 
-11. Optimization
-Ensure that the application is fast and efficient by:
+⚙️ Optimization
+Lazy loading
 
-Optimizing images
+Image optimization
 
-Using lazy loading for components
+Production build minification
 
-Enabling code minification and compression during the build process
+🚢 Deployment
+Platforms supported:
 
-12. Deploy (Publishing)
-Once the app is ready, choose a platform to deploy it:
+Netlify, Vercel (for frontend)
 
-Netlify or Vercel for simple deployment from GitHub repositories
+Heroku (if backend exists)
 
-Heroku for applications with a backend
+GitHub Pages (for static builds)
 
-GitHub Pages for static applications
+🛠 Maintenance & Future Development
+Regular updates planned based on feedback
 
-13. Maintenance and Development
-After deployment, regularly check for bugs, monitor performance, and add new features based on user feedback (e.g., user login, product reviews, etc.).
+Possible features:
 
+User authentication
+
+Product reviews
+
+Admin dashboard
