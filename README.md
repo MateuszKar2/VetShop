@@ -1,78 +1,116 @@
-1. Zainicjowanie Projektu
-Zainstaluj projekt za pomocą create-react-app z szablonem TypeScript. To utworzy szkielet aplikacji z odpowiednimi plikami konfiguracyjnymi.
+ # VetShop
 
-2. Struktura Katalogów i Plików
-Zorganizuj strukturę katalogów i plików w projekcie, aby była czytelna i łatwa w utrzymaniu. Stwórz foldery na komponenty, strony, style i typy TypeScript.
+**VetShop** is my latest project, currently under development. It aims to be a web application for an online veterinary shop. The project is built using **TypeScript**, **React** for the front-end, and a back-end component to handle various store-related functionalities.
 
-3. Instalacja Zależności
-Zainstaluj dodatkowe zależności, takie jak React Router (do nawigacji) oraz Axios (do wykonywania zapytań HTTP do API).
+## 🛠️ Technologies Used
 
-4. Konfiguracja Routera
-Skonfiguruj React Router w aplikacji, tworząc trasy dla różnych stron (np. strona główna, strona produktów, szczegóły produktu, koszyk).
+- [TypeScript](https://www.typescriptlang.org/) – For static typing and better code quality
+- [React](https://reactjs.org/) – Front-end framework for building user interfaces
+- [Node.js](https://nodejs.org/) – Backend server runtime environment
+- [Express.js](https://expressjs.com/) – Backend framework for handling routes and requests
+- [MongoDB](https://www.mongodb.com/) – NoSQL database (if used for the project)
+- [JWT Authentication](https://jwt.io/) – Authentication for users and admin access (if applicable)
 
-<!-- npm install react-router-dom -->
+## 🚀 Getting Started
 
-5. Tworzenie Komponentów
-Stwórz komponenty, które będą wykorzystywane na stronach, takie jak:
 
-Header (nagłówek z nawigacją).
+🚀 Development Roadmap
+This project is a TypeScript-based React application designed with clean architecture and modular structure. Below is a high-level overview of the development steps and technologies used:
 
-Footer (stopka z informacjami o prawach autorskich).
+🔧 Initialization & Setup
+Bootstrapped using Create React App with the TypeScript template.
 
-ProductList (wyświetlanie listy produktów).
+Project structure organized into separate folders for components, pages, styles, and types.
 
-ProductItem (wyświetlanie pojedynczego produktu).
+📦 Core Dependencies
+React Router – for client-side navigation
 
-<!--pobrałem- skompresowałem zdjęcia -->
+Axios – for API communication
 
-6. Strony Aplikacji
-Utwórz strony dla różnych sekcji sklepu:
+🌐 Routing & Navigation
+Configured React Router for multiple pages:
 
-HomePage (strona główna z powitaniem i ogólnymi informacjami o sklepie).
+Home
 
-ProductsPage (strona wyświetlająca listę produktów).
+Products
 
-ProductDetailPage (strona z szczegółami produktu).
+Product Details
 
-Cart (strona koszyka).
+Cart
 
-7. Komunikacja z API
-Zintegruj aplikację z zewnętrznym API lub własnym backendem, aby pobierać dane o produktach (np. za pomocą Axios). Obsłuż zapytania HTTP, aby wyświetlić produkty na stronie.
+🧩 Components
+Reusable UI components include:
 
-8. Zarządzanie Stanem
-Rozważ użycie React Context API do zarządzania stanem aplikacji (np. przechowywania produktów w koszyku, stanu użytkownika itp.).
+Header – navigation bar
 
-9. Stylizacja
-Zadbaj o estetykę aplikacji, tworząc odpowiednie style CSS lub korzystając z frameworków CSS (np. Styled-components, TailwindCSS, Material UI, etc.).
+Footer – page footer
 
-10. Testowanie
-Uruchom aplikację lokalnie i przetestuj wszystkie funkcje, takie jak:
+ProductList – displays all products
 
-Nawigacja między stronami.
+ProductItem – single product card
 
-Dodawanie produktów do koszyka.
+📄 Pages
+Dedicated pages for:
 
-Ładowanie danych z API.
+Home
 
-Sprawdzanie błędów i walidacja formularzy (np. koszyk, rejestracja).
+Product listing
 
-11. Optymalizacja
-Upewnij się, że aplikacja jest szybka i wydajna:
+Product details
 
-Optymalizuj obrazy.
+Shopping cart
 
-Używaj lazy loading dla komponentów.
+🔌 API Integration
+Product data is fetched from an external API or backend using Axios.
 
-Włącz minifikację i kompresję kodu przy budowie aplikacji.
+Data is dynamically displayed based on routing.
 
-12. Deploy (Publikacja)
-Kiedy aplikacja będzie gotowa, zdecyduj, gdzie ją opublikujesz. Możliwości to:
+🧠 State Management
+React Context API handles global state like cart contents and user data.
 
-Netlify, Vercel (proste deploye z repozytoriów GitHub).
+🎨 Styling
+CSS or libraries such as:
 
-Heroku (dla aplikacji z backendem).
+Styled-components
 
-GitHub Pages (dla aplikacji statycznych).
+TailwindCSS
 
-13. Utrzymanie i Rozwój
-Po wdrożeniu aplikacji regularnie sprawdzaj błędy, monitoruj wydajność i dodawaj nowe funkcjonalności na podstawie feedbacku użytkowników (np. możliwość logowania się, dodawanie opinii o produktach, itp.).
+Material UI (optional)
+
+✅ Testing
+Manual testing includes:
+
+Page navigation
+
+Product adding/removal
+
+API data loading
+
+Form validation
+
+⚙️ Optimization
+Lazy loading
+
+Image optimization
+
+Production build minification
+
+🚢 Deployment
+Platforms supported:
+
+Netlify, Vercel (for frontend)
+
+Heroku (if backend exists)
+
+GitHub Pages (for static builds)
+
+🛠 Maintenance & Future Development
+Regular updates planned based on feedback
+
+Possible features:
+
+User authentication
+
+Product reviews
+
+Admin dashboard
